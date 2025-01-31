@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* Estilos para el aviso */
+        .alerta {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffcc00;
+            color: #000;
+            padding: 30px 40px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+    </style>
 </head>
 <body>
+
    <!--Pestaña Lineas de investigación --> 
 
-<h1>Página en construcción... </h1><br>
-<img src="construyendo.webp" alt="pagEnProceso">
+   <div class="alerta" id="alerta">🚧 ¡Página en construcción! 🚧</div>
+
+
+<script>
+    setTimeout(() => {
+        document.getElementById("alerta").style.opacity = "0";
+        setTimeout(() => document.getElementById("alerta").remove(), 1000);
+    }, 4000); // Desaparece después de 4 segundos
+</script>
 
 </body>
 </html>
