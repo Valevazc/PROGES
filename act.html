@@ -24,28 +24,39 @@
             opacity: 1;
             transition: opacity 1s ease-out;
         }
+
+        /* Estilos del botón */
+        .btn-volver {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-volver:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
 
-    <!-- <h1>Actividades asociadas</h1><br>
+   <div class="alerta" id="alerta">
+       🚧 ¡Página en construcción! 🚧
+       <br>
+       <button class="btn-volver" onclick="window.location.href='index.html'">Volver a la página principal</button>
+   </div>
 
-<h2>sub 1 GestiónArte https://ojs.cfe.edu.uy/index.php/gestionarte/index</h2><br>
-
-<h2>sub 2 RedAGE Internacional https://www.redage.org/
-</h2> -->  
-
-   <div class="alerta" id="alerta">🚧 ¡Página en construcción! 🚧</div>
-
-
-<script>
-    setTimeout(() => {
-        document.getElementById("alerta").style.opacity = "0";
-        setTimeout(() => document.getElementById("alerta").remove(), 1000);
-    }, 4000); // Desaparece después de 4 segundos
-</script>
 
 </body>
 </html>
-   
+
 

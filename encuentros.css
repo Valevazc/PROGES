@@ -59,3 +59,8 @@
     pointer-events: none; /* Evita que la imagen interfiera con los eventos del mouse */
 }
 
+p {
+    color: black !important; 
+}
+
+

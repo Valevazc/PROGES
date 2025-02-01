@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentros Académicos</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="encuentros.css"> <!-- Enlace al archivo CSS específico -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuentros Académicos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="encuentros.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="encabezado">
-        <img src="encabezadoIndex.jpg" alt="Logo de RedAge" class="logo-encabezado">
-    </header>
+  <!-- Encabezado -->
+  <header class="bg-dark text-white text-center py-4">
+    <img src="encabezadoIndex.jpg" alt="Logo de RedAge" class="img-fluid">
+  </header>
 
-   <!-- Barra de navegación -->
-   <nav class="navegacion">
-    <a href="index.html">Atrás</a>
-</nav>
-    <!-- Contenido principal -->
-    <main>
-        <section class="info-encuentros">
-            <h1>Encuentros Académicos</h1>
-            <p>Aquí se presentan los encuentros académicos nacionales e internacionales, en los que PROGES se ha presentado desde su génesis.</p>
-            
-            <div class="imagenes-encuentros">
-                <img src="criedoLogo.png" alt="Criedo Logo" class="logo-encuentro">
-                <img src="universidadBarcLogo.png" alt="Universidad Barcelona Logo" class="logo-encuentro" style="max-width: 120px;">
-            </div>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Atrás</a>
+    </div>
+  </nav>
 
-            <div class="congreso-info">
-                <h2>VII CONGRESO INTERNACIONAL EDO 2023</h2>
-                <p>(Universidad Autónoma de Barcelona; España)</p>
-                <p>Los objetivos del Congreso fueron:</p>
-                <ul>
-                    <li>Analizar y debatir sobre los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento colectivo y, sobre todo, los relacionados con la cultura de aprendizaje en las organizaciones.</li>
-                    <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre la promoción de la conversación, el aprendizaje social e informal en el lugar de trabajo y la cultura de aprendizaje en las organizaciones.</li>
-                    <li>Valorar nuevos formatos de aprendizaje, inteligencia colectiva y participación social en el desarrollo de los profesionales y organizaciones.</li>
-                    <li>Promover líneas de trabajo conjuntas entre la Universidad, la Administración Pública y el sector privado sobre la cultura de aprendizaje e inteligencia colectiva en las organizaciones.</li>
-                    <li>Compartir e impulsar el rol clave de las personas en el desarrollo de las organizaciones y de la sociedad, haciendo compatible los desarrollos personal, profesional, institucional y social.</li>
-                </ul>
-                <img src="redageCongreso.png" alt="RedAGE Congreso" class="foto-congreso">
-            </div>
-
-            <div class="congreso-info">
-                <h2>III CONGRESO INTERNACIONAL GESTIÓN EDUCATIVA</h2>
-                <p>(Pontificia Universidad Católica de Valparaíso; Chile)</p>
-                <p>Objetivos del Congreso:</p>
-                <p>Este congreso busca reflexionar y discutir sobre la gestión educativa desde las trayectorias educativas, considerando que éstas son uno de los pilares fundamentales para mejorar la calidad de la educación y proyectar hacia el futuro la igualdad de oportunidades a niños, niñas y jóvenes de los países de Iberoamérica.</p>
-                <p>El Congreso es dirigido a los directivos, supervisores y asesores de centros y sistemas educativos, los estudiantes de pre y posgrado, profesores y profesoras de centros escolares y de educación superior, investigadores e investigadoras, integrantes de entidades responsables del diseño, ejecución y evaluación de la gestión educativa, integrantes de la RedAGE y otros profesionales interesados en dinamizar la Gestión Educativa desde las políticas y la práctica educativa.</p>
-            </div>
-        </section>
-    </main>
+  <!-- Contenido principal -->
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <h1 class="fw-bold">Encuentros Académicos</h1>
+      <p class="lead">
+        Aquí se presentan los encuentros académicos nacionales e internacionales, en los que PROGES se ha presentado desde su creación en 2023:
+      </p>
+    </section>
+    
+    <!-- Sección de encuentros en tarjetas -->
+    <div class="row g-4">
+      
+      <!-- VII CONGRESO INTERNACIONAL EDO 2023 -->
+      <div class="col-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">VII CONGRESO INTERNACIONAL EDO 2023</h2>
+            <p class="card-subtitle mb-3 text-muted">(Universidad Autónoma de Barcelona; España)</p>
+            <h3>Objetivos del Congreso:</h3>
+            <ul>
+              <li>Analizar y debatir sobre los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento colectivo y, sobre todo, los relacionados con la cultura de aprendizaje en las organizaciones.</li>
+              <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre la promoción de la conversación, el aprendizaje social e informal en el lugar de trabajo y la cultura de aprendizaje en las organizaciones.</li>
+              <li>Valorar nuevos formatos de aprendizaje, inteligencia colectiva y participación social en el desarrollo de los profesionales y organizaciones.</li>
+              <li>Promover líneas de trabajo conjuntas entre la Universidad, la Administración Pública y el sector privado sobre la cultura de aprendizaje e inteligencia colectiva en las organizaciones.</li>
+              <li>Compartir e impulsar el rol clave de las personas en el desarrollo de las organizaciones y de la sociedad, haciendo compatible los desarrollos personal, profesional, institucional y social.</li>
+            </ul>
+            <h3>Simposio presentado:</h3>
+            <p class="card-text">“Coordenadas conceptuales para analizar procesos de cambio en educación”</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- II CONGRESO INTERNACIONAL GESTIÓN EDUCATIVA (2024) -->
+      <div class="col-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">II CONGRESO INTERNACIONAL GESTIÓN EDUCATIVA (2024)</h2>
+            <p class="card-subtitle mb-3 text-muted">(Pontificia Universidad Católica de Valparaíso; Chile)</p>
+            <h3>Objetivos del Congreso:</h3>
+            <p>
+              Este congreso busca reflexionar y discutir sobre la gestión educativa desde las trayectorias educativas, considerando que éstas son uno de los pilares fundamentales para mejorar la calidad de la educación y proyectar hacia el futuro la igualdad de oportunidades a niños, niñas y jóvenes de los países de Iberoamérica.
+            </p>
+            <p>
+              El Congreso es dirigido a los directivos, supervisores y asesores de centros y sistemas educativos, los estudiantes de pre y posgrado, profesores y profesoras de centros escolares y de educación superior, investigadores e investigadoras, integrantes de entidades responsables del diseño, ejecución y evaluación de la gestión educativa, integrantes de la RedAGE y otros profesionales interesados en dinamizar la Gestión Educativa desde las políticas y la práctica educativa.
+            </p>
+            <h3>Simposio presentado:</h3>
+            <p class="card-text">“Validación de analizadores de procesos de transformación educativa”</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CAFÉ COLOQUIO RedAGE Uruguay (2024) -->
+      <div class="col-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">CAFÉ COLOQUIO RedAGE Uruguay (2024)</h2>
+            <h3>Tema en discusión:</h3>
+            <p class="card-text">“Deconstuyendo problemas desde la gestión”</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- VIII CONGRESO INTERNACIONAL EDO (2025) -->
+      <div class="col-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">VIII CONGRESO INTERNACIONAL EDO (2025)</h2>
+            <h3>Objetivos del Congreso:</h3>
+            <ul>
+              <li>Analizar y debatir los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento en la Sociedad 5.0.</li>
+              <li>Evaluar el impacto que la inteligencia artificial está produciendo en la gestión del conocimiento y de las organizaciones.</li>
+              <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre las relaciones entre la inteligencia artificial, la creación y gestión del conocimiento colectivo y las exigencias de la Sociedad 5.0.</li>
+              <li>Profundizar en las herramientas y utilidades de la inteligencia artificial para la promoción y desarrollo de las comunidades de práctica profesional.</li>
+              <li>Promover líneas de trabajo conjuntas entre Universidades, Administración pública y Sectores privados sobre la inteligencia artificial y la cultura de aprendizaje colectivo.</li>
+              <li>Compartir e impulsar el rol clave de las personas en el desarrollo personal, institucional y social.</li>
+            </ul>
+            <h3>Simposio presentado:</h3>
+            <p class="card-text">“Liderazgos y contextos: promotores e inhibidores de la transformación”</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
