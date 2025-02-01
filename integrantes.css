@@ -100,3 +100,9 @@ main {
     color: #666;
     line-height: 1.6;
 }
+
+.subtitulo {
+    font-size: 0.8em;
+    color: gray; /* Opcional, para que se vea más sutil */
+}
+
