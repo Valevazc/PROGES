@@ -106,3 +106,17 @@ main {
     color: gray; /* Opcional, para que se vea más sutil */
 }
 
+/* integrantes.css */
+.navbar-custom {
+    background-color: #343a40;
+  }
+  .navbar-custom .nav-link {
+    color: white !important;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  .navbar-custom .nav-link:hover {
+    color: #ffc107 !important;
+  }
+  
+  

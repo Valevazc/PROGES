@@ -134,6 +134,16 @@ main {
     margin-top: 20px; /* Espacio debajo de la barra de navegación */
 }
 
-
+.navbar-custom {
+    background-color: #343a40;
+  }
+  .navbar-custom .nav-link {
+    color: white !important;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  .navbar-custom .nav-link:hover {
+    color: #ffc107 !important;
+  }
 
 

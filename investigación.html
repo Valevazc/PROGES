@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        /* Estilos para el aviso */
-        .alerta {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #ffcc00;
-            color: #000;
-            padding: 30px 40px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            z-index: 1000;
-            opacity: 1;
-            transition: opacity 1s ease-out;
-        }
-
-        /* Estilos del botón */
-        .btn-volver {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        .btn-volver:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Líneas de Estudio e Investigación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <!-- Encabezado -->
+  <header class="text-center" style="padding: 0;">
+    <img src="encabezadoIndex.jpg" alt="Logo de RedAge" class="img-fluid" style="width: 100%; height: auto; display: block;">
+  </header>
 
-   <!-- Pestaña Líneas de investigación --> 
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">¿QUIÉNES SOMOS?</a></li>
+        <li class="nav-item"><a class="nav-link" href="integrantes.html">INTEGRANTES</a></li>
+        <li class="nav-item"><a class="nav-link" href="encuentros.html">ENCUENTROS ACADÉMICOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="investigacion.html">LÍNEAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="act.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
 
-   <div class="alerta" id="alerta">
-       🚧 ¡Página en construcción! 🚧
-       <br>
-       <button class="btn-volver" onclick="window.location.href='index.html'">Volver a la página principal</button>
-   </div>
+  <!-- Contenido principal -->
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <h1 class="fw-bold">Líneas de Estudio e Investigación</h1>
+    </section>
 
+    <section class="info-proges">
+      <p>Los escenarios educativos se caracterizan por su alta complejidad, por lo que entendemos estratégico definir líneas de abordaje que nos permitan comprender y operar en la realidad, a partir de parámetros que orientan la acción.</p>
+      <p>Actualmente nos encontramos trabajando a partir de dos amplias líneas de abordaje: la transición entre modelos y la gestión del conocimiento.</p>
+      
+      <h2 class="text-primary">Transición entre Modelos</h2>
+      <p>Estamos viviendo en la educación una transición entre modelos. De los tradicionales modelos verticales, compartimentados y rígidos, hacia otros más interactivos y flexibles mediados por la incorporación de las nuevas tecnologías.</p>
+      <p>La transición entre modelos resulta más imperceptible en unos contextos y más evidente en otros, dependiendo de los distintos grados de transformación ya realizados en cada escenario. Estas transiciones también dependen del grado de desarrollo organizacional logrado por los equipos de trabajo de cada institución. Depende en buena medida de las fortalezas presentes en los equipos y del desarrollo de competencias basadas en el trabajo colaborativo y el aprovechamiento de los espacios de autonomía profesional.</p>
+      <p>El establecimiento de modelos de análisis nos permite estudiar las sinergias que se presentan en las prácticas educativas, a la vez que descubrir posibles disfuncionalidades que es necesario trabajar.</p>
+      
+      <h2 class="text-primary">Gestión del Conocimiento</h2>
+      <p>En un mundo que se transforma permanentemente, el conocimiento, como componente relacional y cultural, se convierte en un activo fundamental en los procesos de crecimiento y desarrollo organizacional.</p>
+      <p>La permanencia de prácticas solitarias a nivel del aula o de los espacios de gestión, dificultan que el conocimiento que se genera se registre, comparta y promueva la reflexión colectiva de los equipos institucionales. Resulta complejo generar visiones integradoras desde prácticas cubiculares.</p>
+      <p>El conocimiento requiere ser gestionado, a partir de roles activos de liderazgo que promuevan procesos de autorrevisión y autoevaluación personales y colectivos, que habiliten a la creación de nuevos conocimientos. Resulta fundamental promover procesos de aprendizaje y reflexión colectivos, que permitan instalar nuevas dinámicas integradoras de los procesos de innovación y mejora.</p>
+      <p>Esta perspectiva resulta viable para consolidar culturas colaborativas y comunidades de aprendizaje. Sin estas bases integradas a la cultura de las organizaciones educativas, se vuelve complejo pensar procesos colectivos desde miradas que permanecen jerarquizando puntos de vista individuales.</p>
+    </section>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
