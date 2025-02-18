@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,42 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="encuentros.css">
+  <style>
+    /* Contenedor horizontal para el feed de imágenes */
+    .horizontal-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    .horizontal-scroll img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      /* Indica que se puede hacer click */
+    }
+
+    .horizontal-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Encabezado -->
   <header class="text-center" style="padding: 0;">
-    <img src="encabezadoIndex.jpg" alt="Logo de RedAge" class="img-fluid" style="width: 100%; height: auto; display: block;">
+    <img src="encabezadoIndex.jpg" alt="Logo de RedAge" class="img-fluid"
+      style="width: 100%; height: auto; display: block;">
   </header>
-  
 
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -43,13 +73,14 @@
     <section class="text-center mb-5">
       <h1 class="fw-bold">Encuentros Académicos</h1>
       <p class="lead">
-        Aquí se presentan los encuentros académicos nacionales e internacionales, en los que el equipo PROGES ha presentado aportes desde su creación en 2023:
+        Aquí se presentan los encuentros académicos nacionales e internacionales, en los que el equipo PROGES ha
+        presentado aportes desde su creación en 2022:
       </p>
     </section>
-    
+
     <!-- Sección de encuentros en tarjetas -->
     <div class="row g-4">
-      
+
       <!-- VII CONGRESO INTERNACIONAL EDO 2023 -->
       <div class="col-12">
         <div class="card h-100">
@@ -58,18 +89,36 @@
             <p class="card-subtitle mb-3 text-muted">(Universidad Autónoma de Barcelona; España)</p>
             <h3>Objetivos del Congreso:</h3>
             <ul>
-              <li>Analizar y debatir sobre los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento colectivo y, sobre todo, los relacionados con la cultura de aprendizaje en las organizaciones.</li>
-              <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre la promoción de la conversación, el aprendizaje social e informal en el lugar de trabajo y la cultura de aprendizaje en las organizaciones.</li>
-              <li>Valorar nuevos formatos de aprendizaje, inteligencia colectiva y participación social en el desarrollo de los profesionales y organizaciones.</li>
-              <li>Promover líneas de trabajo conjuntas entre la Universidad, la Administración Pública y el sector privado sobre la cultura de aprendizaje e inteligencia colectiva en las organizaciones.</li>
-              <li>Compartir e impulsar el rol clave de las personas en el desarrollo de las organizaciones y de la sociedad, haciendo compatible los desarrollos personal, profesional, institucional y social.</li>
+              <li>Analizar y debatir sobre los nuevos planteamientos y estrategias utilizadas en los procesos de
+                creación y gestión del conocimiento colectivo y, sobre todo, los relacionados con la cultura de
+                aprendizaje en las organizaciones.</li>
+              <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre la promoción de la
+                conversación, el aprendizaje social e informal en el lugar de trabajo y la cultura de aprendizaje en las
+                organizaciones.</li>
+              <li>Valorar nuevos formatos de aprendizaje, inteligencia colectiva y participación social en el desarrollo
+                de los profesionales y organizaciones.</li>
+              <li>Promover líneas de trabajo conjuntas entre la Universidad, la Administración Pública y el sector
+                privado sobre la cultura de aprendizaje e inteligencia colectiva en las organizaciones.</li>
+              <li>Compartir e impulsar el rol clave de las personas en el desarrollo de las organizaciones y de la
+                sociedad, haciendo compatible los desarrollos personal, profesional, institucional y social.</li>
             </ul>
             <h3>Simposio presentado:</h3>
             <p class="card-text">“Coordenadas conceptuales para analizar procesos de cambio en educación”</p>
+            <a href="VII CONGRESO INTERNACIONAL EDO 2023/Simposio_EDO_Uruguay_versión_6_02_23.docx" download>Coordenadas conceptuales para analizar procesos de cambio en educación</a>
+
+            <!-- Feed horizontal de material audiovisual para VII CONGRESO INTERNACIONAL EDO 2023 -->
+            <div class="horizontal-scroll mt-3">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2023/1.png" alt="Material Audiovisual 1">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2023/2.png" alt="Material Audiovisual 2">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2023/3.jpeg" alt="Material Audiovisual 3">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2023/4.jpeg" alt="Material Audiovisual 4">
+            </div>
+            <!-- Fin feed horizontal -->
+
           </div>
         </div>
       </div>
-      
+
       <!-- II CONGRESO INTERNACIONAL GESTIÓN EDUCATIVA (2024) -->
       <div class="col-12">
         <div class="card h-100">
@@ -78,54 +127,115 @@
             <p class="card-subtitle mb-3 text-muted">(Pontificia Universidad Católica de Valparaíso; Chile)</p>
             <h3>Objetivos del Congreso:</h3>
             <p>
-              Este congreso busca reflexionar y discutir sobre la gestión educativa desde las trayectorias educativas, considerando que éstas son uno de los pilares fundamentales para mejorar la calidad de la educación y proyectar hacia el futuro la igualdad de oportunidades a niños, niñas y jóvenes de los países de Iberoamérica.
+              Este congreso busca reflexionar y discutir sobre la gestión educativa desde las trayectorias educativas,
+              considerando que éstas son uno de los pilares fundamentales para mejorar la calidad de la educación y
+              proyectar hacia el futuro la igualdad de oportunidades a niños, niñas y jóvenes de los países de
+              Iberoamérica.
             </p>
             <p>
-              El Congreso es dirigido a los directivos, supervisores y asesores de centros y sistemas educativos, los estudiantes de pre y posgrado, profesores y profesoras de centros escolares y de educación superior, investigadores e investigadoras, integrantes de entidades responsables del diseño, ejecución y evaluación de la gestión educativa, integrantes de la RedAGE y otros profesionales interesados en dinamizar la Gestión Educativa desde las políticas y la práctica educativa.
+              El Congreso es dirigido a los directivos, supervisores y asesores de centros y sistemas educativos, los
+              estudiantes de pre y posgrado, profesores y profesoras de centros escolares y de educación superior,
+              investigadores e investigadoras, integrantes de entidades responsables del diseño, ejecución y evaluación
+              de la gestión educativa, integrantes de la RedAGE y otros profesionales interesados en dinamizar la
+              Gestión Educativa desde las políticas y la práctica educativa.
             </p>
             <h3>Simposio presentado:</h3>
             <p class="card-text">“Validación de analizadores de procesos de transformación educativa”</p>
+            <a href="VII CONGRESO INTERNACIONAL EDO 2023/Template_Congreso.docx.docx" download>Validación de
+              herramientas de registro, como estrategia sustentable en los procesos de cambio</a><br><br>
+            <a href="VII CONGRESO INTERNACIONAL EDO 2023/Equipo PROGES Presentación CONGRESO CHILE 2024 _ Vázquez - Boragno - de Armas.pptx.pdf"
+              target="_blank">Ver PDF</a>
+
+            <!-- Feed horizontal de material audiovisual para II CONGRESO INTERNACIONAL GESTIÓN EDUCATIVA (2024) -->
+
+            <div class="horizontal-scroll mt-3">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal0.jpg" alt="Material Audiovisual 1">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal1.jpg" alt="Material Audiovisual 2">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal2.jpg" alt="Material Audiovisual 3">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal3.jpg" alt="Material Audiovisual 4">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal4.jpg" alt="Material Audiovisual 5">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal5.jpg" alt="Material Audiovisual 6">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal6.jpg" alt="Material Audiovisual 7">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal7.jpg" alt="Material Audiovisual 8">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal8.png" alt="Material Audiovisual 9">
+              <img src="VII CONGRESO INTERNACIONAL EDO 2024/congresoInternacinal9.png" alt="Material Audiovisual 10">
+
+            </div>
+            <!-- Fin feed horizontal -->
+
           </div>
         </div>
       </div>
-      
-      <!-- CAFÉ COLOQUIO RedAGE Uruguay (2024) -->
-      <div class="col-12">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">CAFÉ COLOQUIO RedAGE Uruguay (2024)</h2>
-            <h3>Tema en discusión:</h3>
-            <p class="card-text">“Deconstuyendo problemas desde la gestión”</p>
-          </div>
-        </div>
+
+     <!-- CAFÉ COLOQUIO RedAGE Uruguay (2022) -->
+<div class="col-12">
+  <div class="card h-100">
+    <div class="card-body">
+      <h2 class="card-title">CAFÉ COLOQUIO RedAGE Uruguay (2022)</h2>
+      <h3>Tema en discusión:</h3>
+      <p class="card-text">“Deconstuyendo problemas desde la gestión”</p>
+
+      <!-- Feed horizontal de material audiovisual para CAFÉ COLOQUIO -->
+      <div class="horizontal-scroll mt-3 text-center">
+        <img src="café 2022/flyer-cafe-coloquio-2022.jpg" alt="Material Audiovisual 1" class="img-fluid" style="max-width: 70%; border-radius: 8px;">
       </div>
-      
-      <!-- VIII CONGRESO INTERNACIONAL EDO (2025) -->
-      <div class="col-12">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">VIII CONGRESO INTERNACIONAL EDO (2025)</h2>
-            <p class="card-subtitle mb-3 text-muted">(Universidad Autónoma de Barcelona; España)</p>
-            <h3>Objetivos del Congreso:</h3>
-            <ul>
-              <li>Analizar y debatir los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento en la Sociedad 5.0.</li>
-              <li>Evaluar el impacto que la inteligencia artificial está produciendo en la gestión del conocimiento y de las organizaciones.</li>
-              <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre las relaciones entre la inteligencia artificial, la creación y gestión del conocimiento colectivo y las exigencias de la Sociedad 5.0.</li>
-              <li>Profundizar en las herramientas y utilidades de la inteligencia artificial para la promoción y desarrollo de las comunidades de práctica profesional.</li>
-              <li>Promover líneas de trabajo conjuntas entre Universidades, Administración pública y Sectores privados sobre la inteligencia artificial y la cultura de aprendizaje colectivo.</li>
-              <li>Compartir e impulsar el rol clave de las personas en el desarrollo personal, institucional y social.</li>
-            </ul>
-            <h3>Simposio presentado:</h3>
-            <p class="card-text">“Liderazgos y contextos: promotores e inhibidores de la transformación”</p>
-          </div>
-        </div>
-      </div>
-      
+      <!-- Fin feed horizontal -->
+
     </div>
-  </main>
-  
+  </div>
+</div>
+
+<!-- VIII CONGRESO INTERNACIONAL EDO (2025) -->
+<div class="col-12">
+  <div class="card h-100">
+    <div class="card-body">
+      <h2 class="card-title">VIII CONGRESO INTERNACIONAL EDO (2025)</h2>
+      <p class="card-subtitle mb-3 text-muted">(Universidad Autónoma de Barcelona; España)</p>
+      <h3>Objetivos del Congreso:</h3>
+      <ul>
+        <li>Analizar y debatir los nuevos planteamientos y estrategias utilizadas en los procesos de creación y gestión del conocimiento en la Sociedad 5.0.</li>
+        <li>Evaluar el impacto que la inteligencia artificial está produciendo en la gestión del conocimiento y de las organizaciones.</li>
+        <li>Fomentar el intercambio de investigaciones, experiencias y buenas prácticas sobre las relaciones entre la inteligencia artificial, la creación y gestión del conocimiento colectivo y las exigencias de la Sociedad 5.0.</li>
+        <li>Profundizar en las herramientas y utilidades de la inteligencia artificial para la promoción y desarrollo de las comunidades de práctica profesional.</li>
+        <li>Promover líneas de trabajo conjuntas entre Universidades, Administración pública y Sectores privados sobre la inteligencia artificial y la cultura de aprendizaje colectivo.</li>
+        <li>Compartir e impulsar el rol clave de las personas en el desarrollo personal, institucional y social.</li>
+      </ul>
+      <h3>Simposio presentado:</h3>
+      <p class="card-text">“Liderazgos y contextos: promotores e inhibidores de la transformación”</p>
+
+      <!-- Feed horizontal de material audiovisual para VIII CONGRESO INTERNACIONAL EDO (2025) -->
+      <div class="horizontal-scroll mt-3 text-center">
+        <img src="congreso 2025/Screenshot 2025-02-11 093257.png" alt="Material Audiovisual 1" class="img-fluid" style="max-width: 70%; border-radius: 8px;">
+      </div>
+      <!-- Fin feed horizontal -->
+
+    </div>
+  </div>
+</div>
+
+  <!-- Modal para ver las imágenes ampliadas -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img src="" alt="Imagen ampliada" id="modalImage" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Al hacer click en cualquier imagen del feed se muestra el modal con la imagen ampliada
+    document.querySelectorAll('.horizontal-scroll img').forEach(img => {
+      img.addEventListener('click', function () {
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = this.src;
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+      });
+    });
+  </script>
 </body>
+
 </html>
-
-
